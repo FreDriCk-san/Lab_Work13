@@ -80,19 +80,9 @@ public class LinkedListTests {
         Assertions.assertEquals(29, consumeredList.first().age);
         Assertions.assertEquals(40, consumeredList.find(3).age);
         Assertions.assertEquals(-37, consumeredList.last().age);
-
-
-
-        //Remove some of the Persons [29, 19, 33, 40, -11, 23, -37]
-        linkedList.removeFirst();
-        Assertions.assertEquals(19, linkedList.first().age);
-
-        linkedList.remove(1);
-        Assertions.assertEquals(40, linkedList.find(1).age);
-
-        linkedList.removeLast();
-        Assertions.assertEquals(23, linkedList.last().age);
-
+        
+        
+        //Remove all Persons
         linkedList.removeAll();
         Assertions.assertTrue(linkedList.isEmpty());
 
